@@ -49,17 +49,12 @@ The **Patient Waiting Time** project aims to analyze patient waiting times at a 
 
 ## Introduction
 
-### Brief Overview of The Project
+#### Brief Overview of The Project
 The Patient Waiting Time project focuses on analyzing the duration patients wait to see a doctor, identifying trends, and understanding the factors that contribute to varying waiting times.
 
 #### Purpose of The Project
 The purpose of this project is to analyze patient waiting times to uncover patterns and identify the underlying factors that contribute to delays. By understanding these dynamics, healthcare facilities can implement strategies to enhance patient experience, optimize resource allocation, and improve overall operational efficiency. 
 
-### Dataset Source
-Here’s how you can structure the **Dataset Source** section using the information you provided:
-
-### Dataset Source
+#### Dataset Source
 The dataset used for this project is titled **Hospital Patient Data** and can be accessed on Kaggle at the following link: [Hospital Patient Data](https://www.kaggle.com/datasets/abdulqaderasiirii/hospital-patient-data). This dataset encompasses a comprehensive collection of data from patients entering the hospital until their exit. It was updated 2 years ago by **Abdulqader Asiirii**.
 
-Feel free to let me know if you need any adjustments or additional information!
-Let me know if you need further modifications or additional sections!
