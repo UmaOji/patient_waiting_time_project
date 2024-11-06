@@ -78,23 +78,24 @@ The dataset used for this project is titled **Hospital Patient Data** and can be
      i. **Handling Null or Placeholder Values**:
          - The `lab_cost` column contained rows where entries had only the `$` symbol, which was replaced with `NULL` to ensure data consistency.
          - Used the following SQL query for this transformation:
-           ```sql
+     ```sql
            UPDATE patients
            SET lab_cost = NULL
            WHERE lab_cost = '$';
-           ```
+     ```
 
      ii. **Standardizing Date and Time Formats**:
          - Ensured `entry_date` and time-related columns (`entry_time`, `post_consultation_time`, `completion_time`) were stored in valid date and time formats.
          - Queried for any entries that didn’t match standard date or time formats using:
-           ```sql
+
+        ```sql
            SELECT *
            FROM patients
            WHERE entry_date NOT REGEXP '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'
               OR entry_time NOT REGEXP '^[0-9]{2}:[0-9]{2}:[0-9]{2}$'
               OR post_consultation_time NOT REGEXP '^[0-9]{2}:[0-9]{2}:[0-9]{2}$'
               OR completion_time NOT REGEXP '^[0-9]{2}:[0-9]{2}:[0-9]{2}$';
-           ```
+        ```
 > [!NOTE]  
 > I changed these formats in **Excel** before importing into MySQL to ensure everything was intact before beginning the analysis. This was done to ensure proper data interpretation during import, especially for date and time values.
 
@@ -102,10 +103,10 @@ The dataset used for this project is titled **Hospital Patient Data** and can be
    - Checked for duplicate records based on the combination of `patient_id`, `entry_date`, and `completion_time`.
    - Identified duplicates using:
      ```sql
-     SELECT patient_id, entry_date, completion_time, COUNT(*)
-     FROM patients
-     GROUP BY patient_id, entry_date, completion_time
-     HAVING COUNT(*) > 1;
+        SELECT patient_id, entry_date, completion_time, COUNT(*)
+        FROM patients
+        GROUP BY patient_id, entry_date, completion_time
+        HAVING COUNT(*) > 1;
      ```
 
 This **Data Cleaning** process was essential to prepare a consistent, analysis-ready dataset that would yield accurate insights in the subsequent analysis steps.
@@ -114,11 +115,10 @@ This **Data Cleaning** process was essential to prepare a consistent, analysis-r
    - If duplicates are possible, we can use a query to identify them. A common way to do this is by grouping and counting based on likely unique combinations, such as `patient_id`, `entry_date`, and `completion_time`.
 
 ```sql
--- Find potential duplicates based on key columns
-SELECT patient_id, entry_date, completion_time, COUNT(*)
-FROM patients
-GROUP BY patient_id, entry_date, completion_time
-HAVING COUNT(*) > 1;
+   SELECT patient_id, entry_date, completion_time, COUNT(*)
+   FROM patients
+   GROUP BY patient_id, entry_date, completion_time
+   HAVING COUNT(*) > 1;
 ```
 
 ---
