@@ -70,3 +70,55 @@ The dataset used for this project is titled **Hospital Patient Data** and can be
 #### Exploring Raw Data
    - Column Overview: Inspected column types and sample entries, confirming that certain columns, like lab_cost, contain non-numeric characters ($) in most rows, which need further cleaning.
    - Data Types Review: Adjusted column data types to align with the dataset (e.g., treating patient_id as a VARCHAR due to mixed text and numeric values).
+
+#### Cleaning Data
+   - **Objective**: Prepare the dataset for analysis by addressing any inconsistencies, standardizing formats, and handling missing or placeholder values.
+
+   - **Steps Taken**:
+
+      1. **Handling Null or Placeholder Values**:
+         - The `lab_cost` column contained rows where entries had only the `$` symbol, which was replaced with `NULL` to ensure data consistency.
+         - Used the following SQL query for this transformation:
+           ```sql
+           UPDATE patients
+           SET lab_cost = NULL
+           WHERE lab_cost = '$';
+           ```
+
+      2. **Standardizing Date and Time Formats**:
+         - Ensured `entry_date` and time-related columns (`entry_time`, `post_consultation_time`, `completion_time`) were stored in valid date and time formats.
+         - Queried for any entries that didn’t match standard date or time formats using:
+           ```sql
+           SELECT *
+           FROM patients
+           WHERE entry_date NOT REGEXP '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'
+              OR entry_time NOT REGEXP '^[0-9]{2}:[0-9]{2}:[0-9]{2}$'
+              OR post_consultation_time NOT REGEXP '^[0-9]{2}:[0-9]{2}:[0-9]{2}$'
+              OR completion_time NOT REGEXP '^[0-9]{2}:[0-9]{2}:[0-9]{2}$';
+           ```
+> [!NOTE]  
+> I changed these formats in **Excel** before importing into MySQL to ensure everything was intact before beginning the analysis. This was done to ensure proper data interpretation during import, especially for date and time values.
+
+   3. **Converting Data Types**:
+         - Adjusted `patient_id` to accommodate text-based identifiers that use a combination of letters and numbers (e.g., `C10001`).
+         - Verified the format with:
+           ```sql
+           SELECT patient_id
+           FROM patients
+           WHERE patient_id NOT REGEXP '^C[0-9]+$';
+           ```
+
+      4. **Removing Duplicates**:
+         - Checked for duplicate records based on the combination of `patient_id`, `entry_date`, and `completion_time`.
+         - Identified duplicates using:
+           ```sql
+           SELECT patient_id, entry_date, completion_time, COUNT(*)
+           FROM patients
+           GROUP BY patient_id, entry_date, completion_time
+           HAVING COUNT(*) > 1;
+           ```
+
+This **Data Cleaning** process was essential to prepare a consistent, analysis-ready dataset that would yield accurate insights in the subsequent analysis steps.
+
+---
+
