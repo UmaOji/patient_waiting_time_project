@@ -27,8 +27,8 @@ The **Patient Waiting Time** project aims to analyze patient waiting times at a 
    - Techniques Used for Cleaning and Analyzing Data
 
 5. **Results**
-   - Summary of Findings
-   - Visualizations (if applicable)
+   - Summary of Key Findings
+   - Visualizations & Insights (if applicable)
 
 6. **Conclusion**
    - Recommendations Based on Findings
@@ -109,5 +109,13 @@ The dataset used for this project is titled **Hospital Patient Data** and can be
      ```
 
 This **Data Cleaning** process was essential to prepare a consistent, analysis-ready dataset that would yield accurate insights in the subsequent analysis steps.
+
+---
+
+## Analysis Questions
+#### 1. Does the patient type affect the waiting time?
+In this dataset, the **patient type** does not affect the waiting time because all the patients are **outpatients**. Outpatients are people who come in for medical care but don’t need to stay overnight in the hospital. Since everyone in the dataset is the same type of patient (outpatient), there is no difference in waiting times based on patient type. Since there are no inpatient patients in the data, patient type does not affect the waiting times in this case.
+
+#### 2. Is there a specific type of patient waiting a long time?
 
 
