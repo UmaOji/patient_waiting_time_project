@@ -7,12 +7,11 @@ The **Patient Waiting Time** project aims to analyze patient waiting times at a 
    - [Brief Overview of The Project](#brief-overview-of-the-project)
    - [Purpose of The Project](#purpose-of-the-project)
    - [Dataset Source](#dataset-source)
-
-2. **Data Preparation**
-   - Loading Data
-   - Exploring Raw Data
-   - Cleaning Data
-   - Data Transformation
+- [Data Preparation]
+   - [Loading Data]
+   - [Exploring Raw Data]
+   - [Cleaning Data]
+   - [Data Transformation
 
 3. **Analysis Questions**
    - Does the patient type affect the waiting time?
@@ -76,7 +75,7 @@ The dataset used for this project is titled **Hospital Patient Data** and can be
 
    - **Steps Taken**:
 
-      1. **Handling Null or Placeholder Values**:
+     i. **Handling Null or Placeholder Values**:
          - The `lab_cost` column contained rows where entries had only the `$` symbol, which was replaced with `NULL` to ensure data consistency.
          - Used the following SQL query for this transformation:
            ```sql
@@ -85,7 +84,7 @@ The dataset used for this project is titled **Hospital Patient Data** and can be
            WHERE lab_cost = '$';
            ```
 
-      2. **Standardizing Date and Time Formats**:
+     ii. **Standardizing Date and Time Formats**:
          - Ensured `entry_date` and time-related columns (`entry_time`, `post_consultation_time`, `completion_time`) were stored in valid date and time formats.
          - Queried for any entries that didn’t match standard date or time formats using:
            ```sql
@@ -99,24 +98,15 @@ The dataset used for this project is titled **Hospital Patient Data** and can be
 > [!NOTE]  
 > I changed these formats in **Excel** before importing into MySQL to ensure everything was intact before beginning the analysis. This was done to ensure proper data interpretation during import, especially for date and time values.
 
-   3. **Converting Data Types**:
-         - Adjusted `patient_id` to accommodate text-based identifiers that use a combination of letters and numbers (e.g., `C10001`).
-         - Verified the format with:
-           ```sql
-           SELECT patient_id
-           FROM patients
-           WHERE patient_id NOT REGEXP '^C[0-9]+$';
-           ```
-
-      4. **Removing Duplicates**:
-         - Checked for duplicate records based on the combination of `patient_id`, `entry_date`, and `completion_time`.
-         - Identified duplicates using:
-           ```sql
-           SELECT patient_id, entry_date, completion_time, COUNT(*)
-           FROM patients
-           GROUP BY patient_id, entry_date, completion_time
-           HAVING COUNT(*) > 1;
-           ```
+ iii. **Removing Duplicates**:
+   - Checked for duplicate records based on the combination of `patient_id`, `entry_date`, and `completion_time`.
+   - Identified duplicates using:
+     ```sql
+     SELECT patient_id, entry_date, completion_time, COUNT(*)
+     FROM patients
+     GROUP BY patient_id, entry_date, completion_time
+     HAVING COUNT(*) > 1;
+     ```
 
 This **Data Cleaning** process was essential to prepare a consistent, analysis-ready dataset that would yield accurate insights in the subsequent analysis steps.
 
