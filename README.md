@@ -11,7 +11,7 @@ The **Patient Waiting Time** project aims to analyze patient waiting times at a 
    - [Loading Data](#loading-data)
    - [Exploring Raw Data](#exploring-raw-data)
    - [Cleaning Data](#cleaning-data)
-   - [Data Transformation](#data-transformaion)
+   - [Data Transformation](#data-transformation)
 
 3. **Analysis Questions**
    - Does the patient type affect the waiting time?
