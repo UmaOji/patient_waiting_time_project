@@ -7,11 +7,11 @@ The **Patient Waiting Time** project aims to analyze patient waiting times at a 
    - [Brief Overview of The Project](#brief-overview-of-the-project)
    - [Purpose of The Project](#purpose-of-the-project)
    - [Dataset Source](#dataset-source)
-- [Data Preparation]
-   - [Loading Data]
-   - [Exploring Raw Data]
-   - [Cleaning Data]
-   - [Data Transformation
+- [Data Preparation](#data-preparation)
+   - [Loading Data](#loading-data)
+   - [Exploring Raw Data](#exploring-raw-data)
+   - [Cleaning Data](#cleaning-data)
+   - [Data Transformation](#data-transformaion)
 
 3. **Analysis Questions**
    - Does the patient type affect the waiting time?
@@ -109,6 +109,17 @@ The dataset used for this project is titled **Hospital Patient Data** and can be
      ```
 
 This **Data Cleaning** process was essential to prepare a consistent, analysis-ready dataset that would yield accurate insights in the subsequent analysis steps.
+
+#### Removing Duplicates
+   - If duplicates are possible, we can use a query to identify them. A common way to do this is by grouping and counting based on likely unique combinations, such as `patient_id`, `entry_date`, and `completion_time`.
+
+```sql
+-- Find potential duplicates based on key columns
+SELECT patient_id, entry_date, completion_time, COUNT(*)
+FROM patients
+GROUP BY patient_id, entry_date, completion_time
+HAVING COUNT(*) > 1;
+```
 
 ---
 
