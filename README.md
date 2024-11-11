@@ -4,9 +4,6 @@ The **Patient Waiting Time** project aims to analyze patient waiting times at a 
 
 ## Table of Contents
 - [Introduction](#introduction)
-   - [Brief Overview of The Project](#brief-overview-of-the-project)
-   - [Purpose of The Project](#purpose-of-the-project)
-   - [Dataset Source](#dataset-source)
 - [Data Preparation](#data-preparation)
    - [Loading Data](#loading-data)
    - [Exploring Raw Data](#exploring-raw-data)
