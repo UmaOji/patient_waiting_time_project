@@ -32,16 +32,9 @@ The **Patient Waiting Time** project aims to analyze patient waiting times at a 
    - Recommendations Based on Findings
    - Next Steps for Implementation
 
-7. **References**
-   - Data Sources
-   - Related Literature
-
 8. **Acknowledgments**
    - Contributors
    - Support and Resources
-    
-9. **License**
-   - Information about the project license if applicable.
 
 ## Introduction
 
