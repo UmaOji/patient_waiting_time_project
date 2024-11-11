@@ -156,19 +156,65 @@ The total revenue generated from medication and consultation combined are as fol
 
 So, **insurance** patients are the biggest contributors in terms of total revenue generated from both medication and consultation, which could be an important insight for healthcare providers when analyzing financial performance by patient type.
 
-#### 7. ### Documentation for **Top 5 Most Frequent Days for Entries**
-**Purpose**:  
+#### 7. Top 5 Most Frequent Days for Entries
+**Purpose:**
 This query identifies the top 5 days of the week with the highest number of patient entries, providing insight into which days are busiest.
 
-**Interpretation**:  
+**Interpretation:**  
 - **Monday** has the highest number of entries at **1,297**.
 - **Tuesday** follows with **1,056** entries, while **Friday** sees **890** entries.
 - **Wednesday** and **Saturday** have comparatively fewer entries, with **762** and **545** respectively.
 
 This information can help the hospital prepare for busier days by adjusting staffing levels and resources to better manage the patient load.
 
-**Recommendation**:  
+**Recommendation:**
 Allocate additional resources on **Monday** and **Tuesday** to handle the higher patient volume and ensure shorter wait times.
+
+#### 8. Correlation Between Entry Time and Wait Time
+**Purpose:**  
+This query examines the correlation between the entry time of patients and their corresponding wait times. It helps determine whether patients entering the hospital at specific times experience longer or shorter wait times.
+
+**Interpretation:** 
+**Interpretation**:  
+The following table shows the average wait time for patients based on their entry time:
+
+| Entry Time (Hour) | Average Wait Time (Minutes) |
+|-------------------|:-----------------------------:|
+| 9                 | 55.60                       |
+| 8                 | 48.35                       |
+| 10                | 47.64                       |
+| 13                | 39.67                       |
+| 11                | 38.87                       |
+
+This suggests that patients who enter at **9 AM** experience the longest wait times, while those entering later, such as at **1 PM** and **11 AM**, tend to have shorter wait times. Wait times are generally shorter later in the day, potentially due to more efficient processing or fewer patients entering at those times.
+
+**Recommendation:** 
+Consider adjusting patient scheduling or resource allocation to reduce wait times during busier morning hours, such as **9 AM**.
+
+### 9. ### Documentation for **Patient Wait Time Trends Over Time**
+**Purpose:**
+This query identifies trends in patient wait times over a period, helping to spot peak times or issues with wait times that could suggest operational inefficiencies.
+
+**Interpretation:**
+The average wait times for patients over the period are as follows:
+- **November 1st**: 40.839 minutes
+- **November 2nd**: 44.097 minutes
+- **November 3rd**: 33.435 minutes
+- **November 4th**: 44.729 minutes
+- **November 5th**: 41.706 minutes
+- **November 6th**: 41.552 minutes
+- **November 7th**: 38.813 minutes
+- **November 8th**: 40.557 minutes
+- **November 9th**: 41.726 minutes
+- **November 10th**: 31.162 minutes
+- **November 11th**: 51.581 minutes
+- **November 12th**: 41.171 minutes
+- **November 13th**: 46.718 minutes
+
+The data shows some variation in wait times, with **November 10th** having the shortest wait time of **31.162 minutes** and **November 11th** the longest at **51.581 minutes**. Other dates show relatively consistent average wait times, hovering between **38** and **46 minutes**.
+
+**Recommendation:**  
+Investigate what factors contributed to the spikes in wait times on **November 4th** and **November 11th**. These outliers might indicate periods of high patient volume or staffing challenges that could be addressed to improve efficiency.
 
 #### 8. Revenue Vs. Wait Time
 This code is designed to help analyze patient data by looking at how waiting times relate to patient expenses. It aims to understand whether patients with higher expenses tend to have longer waiting times or if there’s any noticeable difference across expense categories.
@@ -201,3 +247,30 @@ These findings show that **patients with middle-range expenses had the highest a
 
 ---
 
+### Anomalies and Inconsistencies
+
+Throughout the analysis of the **Hospital Patient Data** dataset, several anomalies and inconsistencies were observed that may need attention for further investigation and cleaning:
+
+1. **Outliers in Wait Times**:
+   - **November 11th** recorded the highest average wait time at **51.58 minutes**, which is significantly higher than the average of most other days (which are generally between 38 and 46 minutes). This spike in wait times may suggest that there was either a staffing issue, a higher number of patients, or inefficiencies on this particular day. Further investigation is required to identify the exact cause.
+   - **November 10th**, on the other hand, showed the shortest wait time at **31.16 minutes**, which could be due to fewer patients or better resource allocation on that day.
+
+2. **Inconsistent Lab Cost Data**:
+   - The **Lab Cost** column contains **$** symbols without any numeric values in approximately 26,566 rows. This inconsistency needs to be addressed either by removing the rows with invalid entries or by converting the values to a consistent numeric format to enable meaningful analysis.
+
+3. **Financial Class and Revenue**:
+   - The **financial class** data indicated that some categories (e.g., **HMO**, **Insurance**, **Corporate**) reported identical total revenue figures of **838:59:59**.. This could be due to data entry errors or missing information in the **revenue** field that was not captured correctly.
+
+4. **Missing or Inconsistent Patient Type Data**:
+   - Although the **patient type** field is generally consistent with only **Outpatients** recorded, certain records may lack specific designations, potentially skewing the analysis of patient wait times and revenues. Missing **patient type** data could lead to incomplete results when analyzing the relationship between patient type and other variables.
+
+### Recommendations for Addressing Anomalies:
+- **Investigate High Wait Times**: Perform a deeper dive into dates with outliers, such as **November 11th**, to identify operational or staffing challenges that need resolution.
+- **Cleanse Lab Cost Data**: Address rows with invalid **Lab Cost** entries to ensure meaningful financial analysis.
+- **Standardize Revenue Data**: Resolve inconsistencies in revenue reporting to avoid misleading financial conclusions.
+- **Optimize Scheduling**: Investigate the causes behind longer wait times during peak hours (e.g., **9 AM**) and optimize patient entry scheduling to balance patient load more evenly throughout the day.
+- **Handle Missing Data**: Implement strategies to fill in or handle missing **patient type** data to maintain the accuracy and integrity of analyses.
+
+By addressing these anomalies, the dataset's quality will be improved, leading to more accurate insights and better decision-making.
+
+---
