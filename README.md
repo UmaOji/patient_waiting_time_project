@@ -13,13 +13,13 @@ The **Patient Waiting Time** project aims to analyze patient waiting times at a 
    - [Cleaning Data](#cleaning-data)
 - [Analysis Questions](#analysis-questions)
    - [Does the patient type affect the waiting time?](#1-does-the-patient-type-affect-the-waiting-time)
-   - [Average Wait Time by Doctor Type](#4-average-wait-time-by-doctor-type)
-   - [Total Revenue by Financial Class](#5-total-revenue-by-financial-class)
-   - [Does the financial class of patients affect total expenses?](#6-does-the-financial-class-of-patients-affect-total-expenses)
-   - [Top 5 Most Frequent Days for Entries](#7-top-5-most-frequent-days-for-entries)
-   - [Correlation Between Entry Time and Wait Time](#8-correlation-between-entry-time-and-wait-time)
-   - [Documentation for Patient Wait Time Trends Over Time](#9-documentation-for-patient-wait-time-trends-over-time)
-   - How can we fix it?
+   - [Average Wait Time by Doctor Type](#2-average-wait-time-by-doctor-type)
+   - [Total Revenue by Financial Class](#3-total-revenue-by-financial-class)
+   - [Does the financial class of patients affect total expenses?](#4-does-the-financial-class-of-patients-affect-total-expenses)
+   - [Top 5 Most Frequent Days for Entries](#5-top-5-most-frequent-days-for-entries)
+   - [Correlation Between Entry Time and Wait Time](#6-correlation-between-entry-time-and-wait-time)
+   - [Documentation for Patient Wait Time Trends Over Time](#6-documentation-for-patient-wait-time-trends-over-time)
+   - [Revenue Vs. Wait Time](#7-revenue-vs-wait-time)
 
 4. **Methodology**
    - SQL Queries for Data Analysis
@@ -151,7 +151,7 @@ The total revenue generated from medication and consultation combined are as fol
 
 So, **insurance** patients are the biggest contributors in terms of total revenue generated from both medication and consultation, which could be an important insight for healthcare providers when analyzing financial performance by patient type.
 
-#### 7. Top 5 Most Frequent Days for Entries
+#### 5. Top 5 Most Frequent Days for Entries
 **Purpose:**
 This query identifies the top 5 days of the week with the highest number of patient entries, providing insight into which days are busiest.
 
@@ -165,7 +165,7 @@ This information can help the hospital prepare for busier days by adjusting staf
 **Recommendation:**
 Allocate additional resources on **Monday** and **Tuesday** to handle the higher patient volume and ensure shorter wait times.
 
-#### 5. Correlation Between Entry Time and Wait Time
+#### 6. Correlation Between Entry Time and Wait Time
 **Purpose:**  
 This query examines the correlation between the entry time of patients and their corresponding wait times. It helps determine whether patients entering the hospital at specific times experience longer or shorter wait times.
 
@@ -186,7 +186,7 @@ This suggests that patients who enter at **9 AM** experience the longest wait ti
 **Recommendation:** 
 Consider adjusting patient scheduling or resource allocation to reduce wait times during busier morning hours, such as **9 AM**.
 
-### 6. Documentation for **Patient Wait Time Trends Over Time**
+### 7. Documentation for **Patient Wait Time Trends Over Time**
 **Purpose:**
 This query identifies trends in patient wait times over a period, helping to spot peak times or issues with wait times that could suggest operational inefficiencies.
 
@@ -211,10 +211,10 @@ The data shows some variation in wait times, with **November 10th** having the s
 **Recommendation:**  
 Investigate what factors contributed to the spikes in wait times on **November 4th** and **November 11th**. These outliers might indicate periods of high patient volume or staffing challenges that could be addressed to improve efficiency.
 
-#### 7. Revenue Vs. Wait Time
+#### 8. Revenue Vs. Wait Time
 This code is designed to help analyze patient data by looking at how waiting times relate to patient expenses. It aims to understand whether patients with higher expenses tend to have longer waiting times or if there’s any noticeable difference across expense categories.
 
-### Explanation of Code Steps
+#### Explanation of Code Steps
 1. **Grouping Patients by Expense Level**:
    - First, calculate each patient’s total expense by combining their `medication_revenue` and `consultation_revenue`.
    - Based on these total expenses, each patient is classified into one of three categories: **High Expenses**, **Middle Expenses**, or **Low Expenses**. This allows us to easily compare waiting times across different financial classes.
