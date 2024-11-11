@@ -18,8 +18,8 @@ The **Patient Waiting Time** project aims to analyze patient waiting times at a 
    - [Does the financial class of patients affect total expenses?](#4-does-the-financial-class-of-patients-affect-total-expenses)
    - [Top 5 Most Frequent Days for Entries](#5-top-5-most-frequent-days-for-entries)
    - [Correlation Between Entry Time and Wait Time](#6-correlation-between-entry-time-and-wait-time)
-   - [Documentation for Patient Wait Time Trends Over Time](#6-documentation-for-patient-wait-time-trends-over-time)
-   - [Revenue Vs. Wait Time](#7-revenue-vs-wait-time)
+   - [Documentation for Patient Wait Time Trends Over Time](#7-documentation-for-patient-wait-time-trends-over-time)
+   - [Revenue Vs. Wait Time](#8-revenue-vs-wait-time)
 
 4. **Methodology**
    - SQL Queries for Data Analysis
