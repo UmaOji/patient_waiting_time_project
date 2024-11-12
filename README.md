@@ -5,9 +5,6 @@ The **Patient Waiting Time** project aims to analyze patient waiting times at a 
 ## Table of Contents
 - [Introduction](#introduction)
 - [Data Preparation](#data-preparation)
-   - [Loading Data](#loading-data)
-   - [Exploring Raw Data](#exploring-raw-data)
-   - [Cleaning Data](#cleaning-data)
 - [Analysis Questions](#analysis-questions)
    - [Does the patient type affect the waiting time?](#1-does-the-patient-type-affect-the-waiting-time)
    - [Average Wait Time by Doctor Type](#2-average-wait-time-by-doctor-type)
