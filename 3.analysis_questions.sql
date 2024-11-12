@@ -35,7 +35,7 @@ LIMIT 5;
 
 -- 6. Correlation Between Entry Time and Wait Time
 SELECT HOUR(entry_time) AS hour_of_day, 
-       ROUND(AVG(TIMESTAMPDIFF(MINUTE, entry_time, post_consultation_time)), 2) AS avg_wait_time_minutes
+	ROUND(AVG(TIMESTAMPDIFF(MINUTE, entry_time, post_consultation_time)), 2) AS avg_wait_time_minutes
 FROM hospital_db.patients
 GROUP BY HOUR(entry_time)
 ORDER BY avg_wait_time_minutes DESC
@@ -79,5 +79,5 @@ FROM (
         post_consultation_time
     FROM hospital_db.patients
     GROUP BY patient_id
-) AS patient_revenue_summary
+     ) AS patient_revenue_summary
 GROUP BY expense_category;
