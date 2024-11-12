@@ -20,7 +20,7 @@ SELECT financial_class,
 	FORMAT(SUM(medication_revenue), 2) AS total_medication_revenue,
 	FORMAT(SUM(consultation_revenue), 2) AS total_consultation_revenue,
 	FORMAT(SUM(medication_revenue) + SUM(consultation_revenue), 2) AS total_patient_expenses
-	# Format() function used to return values with a thousand seperator and specify number of decimal places 
+	# Format() function used to return values with a thousand separator and specify the number of decimal places 
 FROM hospital_db.patients
 GROUP BY financial_class
 ORDER BY SUM(medication_revenue) + SUM(consultation_revenue) DESC;
