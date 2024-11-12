@@ -52,7 +52,7 @@ ORDER BY entry_date;
 SELECT 
     CASE 
         WHEN total_revenue >= (SELECT MAX(total_revenue) * 0.67 FROM (
-				SELECT SUM(medication_revenue + consultation_revenue) AS total_revenue
+		SELECT SUM(medication_revenue + consultation_revenue) AS total_revenue
                 -- Multiplying the maximum revenue by 0.67 for the high threshold (top 33%)
                 FROM hospital_db.patients
                 GROUP BY patient_id
