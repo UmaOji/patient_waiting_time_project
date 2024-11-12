@@ -176,7 +176,7 @@ This suggests that patients who enter at **9 AM** experience the longest wait ti
 **Recommendation:** 
 Consider adjusting patient scheduling or resource allocation to reduce wait times during busier morning hours, such as **9 AM**.
 
-### 7. Documentation for **Patient Wait Time Trends Over Time**
+#### 7. Documentation for **Patient Wait Time Trends Over Time**
 **Purpose:**
 This query identifies trends in patient wait times over a period, helping to spot peak times or issues with wait times that could suggest operational inefficiencies.
 
@@ -218,7 +218,7 @@ In the context of categorizing expenses, a threshold is a cutoff value that we s
 3. **Sorting and Displaying Results**:
    - The results are shown in a simple table, ordered by expense category. This makes it easy to see if there’s any correlation between higher expenses and waiting times.
 
-### Results
+#### Results
 
 The output from this analysis looks like this:
 
