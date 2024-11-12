@@ -18,8 +18,6 @@ The **Patient Waiting Time** project aims to analyze patient waiting times at a 
    - [Documentation for Patient Wait Time Trends Over Time](#7-documentation-for-patient-wait-time-trends-over-time)
    - [Revenue Vs. Wait Time](#8-revenue-vs-wait-time)
 - [Anomalies and Inconsistencies](#anomalies-and-inconsistencies)
-   - [Recommendations for Addressing Anomalies](#recommendations-for-addressing-anomalies) 
-
 4. **Methodology**
    - SQL Queries for Data Analysis
    - Techniques Used for Cleaning and Analyzing Data
