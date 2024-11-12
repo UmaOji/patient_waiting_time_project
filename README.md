@@ -100,16 +100,16 @@ This **Data Cleaning** process was essential to prepare a consistent, analysis-r
 
 ## Analysis Questions
 #### 1. Does the patient type affect the waiting time?
-In this dataset, the **patient type** does not affect the waiting time because all the patients are **OUTPATIENTS**. Outpatients are people who come in for medical care but don’t need to stay overnight in the hospital. Since everyone in the dataset is the same type of patient (outpatient), there is no difference in waiting times based on patient type. Since there are no inpatient patients in the data, patient type does not affect the waiting times in this case.
+In this dataset, the **patient type** does not affect the waiting time because all the patients are **OUTPATIENTS**. Outpatients are people who come in for medical care but don’t need to stay overnight in the hospital. Since everyone in the dataset is the same type of patient (outpatient), there is no difference in waiting times based on patient type in this case.
 
 #### 2. Average Wait Time by Doctor Type
 **Purpose**:  
 Calculate the average wait time by doctor type to identify potential delays in patient care.
 
 **Findings**:
-- **Floating**: 75 hours, 21 minutes
-- **Locum**: 535 hours, 56 minutes, 59 seconds
-- **Anchor**: 838 hours, 59 minutes, 59 seconds
+- **Anchor**: In retail or healthcare settings, the _anchor_ generally refers to a professional (e.g., a pharmacist or manager) who has a primary, stable location or store as their main assignment. They are the consistent, primary point of contact for that location. **838 hours, 59 minutes**
+- **Locum**: This term is commonly used in healthcare, especially for doctors or pharmacists, to describe a temporary or substitute professional who fills in for someone on leave. A _locum_ practitioner is hired on a short-term basis to maintain continuity of care or service. **535 hours, 56 minutes**
+- **Floating**: This describes a role that involves rotating or moving between multiple locations or departments as needed. A _floater_ typically covers shifts across different locations to provide support where needed, such as when there are staff shortages. **75 hours, 21 minutes**
 
 **Interpretation**:  
 Locum and Anchor doctors have significantly longer wait times than Floating doctors, suggesting potential inefficiencies or higher patient loads.
