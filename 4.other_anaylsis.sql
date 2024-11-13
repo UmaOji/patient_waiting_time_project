@@ -2,7 +2,7 @@
 
 -- Overall Patient Count And Summary Stats
 SELECT COUNT(*) AS total_patients, 
-	AVG(TIMESTAMPDIFF(MINUTE, entry_time, completion_time)) AS avg_wait_time,
+    AVG(TIMESTAMPDIFF(MINUTE, entry_time, completion_time)) AS avg_wait_time,
     MIN(TIMESTAMPDIFF(MINUTE, entry_time, completion_time)) AS min_wait_time,
     MAX(TIMESTAMPDIFF(MINUTE, entry_time, completion_time)) AS max_wait_time
 FROM hospital_db.patients;
