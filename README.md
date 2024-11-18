@@ -136,9 +136,7 @@ The total revenue generated from medication and consultation combined are as fol
 - **CORPORATE**: $104,079.89
 - **MEDICARE**: $21,932.11 (Lowest revenue)
 
-So, **insurance** patients are the biggest contributors in terms of total revenue generated from both medication and consultation, which could be an important insight for healthcare providers when analyzing financial performance by patient type.
-![napkin-selection (1)](https://github.com/user-attachments/assets/97490c20-f4e1-415a-bf7a-39ac862c53ca)
-
+So, **insurance** patients are the biggest contributors in total revenue generated from medication and consultation, which could be an important insight for healthcare providers when analyzing financial performance by patient type.
 
 #### 5. Top 5 Most Frequent Days for Entries
 **Purpose:**
