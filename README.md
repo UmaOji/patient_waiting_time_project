@@ -137,6 +137,8 @@ The total revenue generated from medication and consultation combined are as fol
 - **MEDICARE**: $21,932.11 (Lowest revenue)
 
 So, **insurance** patients are the biggest contributors in terms of total revenue generated from both medication and consultation, which could be an important insight for healthcare providers when analyzing financial performance by patient type.
+![napkin-selection (1)](https://github.com/user-attachments/assets/97490c20-f4e1-415a-bf7a-39ac862c53ca)
+
 
 #### 5. Top 5 Most Frequent Days for Entries
 **Purpose:**
@@ -154,7 +156,7 @@ Allocate additional resources on **Monday** and **Tuesday** to handle the higher
 
 #### 6. Correlation Between Entry Time and Wait Time
 **Purpose:**  
-This query examines the correlation between the entry time of patients and their corresponding wait times. It helps determine whether patients entering the hospital at specific times experience longer or shorter wait times.
+This query examines the correlation between patients' entry times and their corresponding wait times. It helps determine whether patients entering the hospital at specific times experience longer or shorter wait times.
 
 **Interpretation:** 
 **Interpretation**:  
