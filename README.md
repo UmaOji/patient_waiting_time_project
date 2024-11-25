@@ -15,16 +15,9 @@ The **Patient Waiting Time** project aims to analyze patient waiting times at a 
    - [Documentation for Patient Wait Time Trends Over Time](#7-documentation-for-patient-wait-time-trends-over-time)
    - [Revenue Vs. Wait Time](#8-revenue-vs-wait-time)
 - [Anomalies and Inconsistencies](#anomalies-and-inconsistencies)
-- Summary of Key Findings
-- Visualizations & Insights (if applicable)
-
-6. **Conclusion**
-   - Recommendations Based on Findings
-   - Next Steps for Implementation
-
-8. **Acknowledgments**
-   - Contributors
-   - Support and Resources
+- [Summary of Key Findings](#summary-of-key-findings)
+- [Visualizations](#visualizations)
+- [Conclusion](#conclusion)
 
 ## Introduction
 
