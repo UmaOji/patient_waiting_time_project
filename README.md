@@ -215,8 +215,6 @@ The output from this analysis looks like this:
 
 These findings show that **patients with middle-range expenses had the highest average waiting time**, whereas high and low-expense groups had slightly shorter average waits. This result suggests that expense levels alone might not be the main factor driving wait times. 
 
----
-
 ### Anomalies and Inconsistencies
 
 Throughout the analysis of the **Hospital Patient Data** dataset, several anomalies and inconsistencies were observed that may need attention for further investigation and cleaning:
@@ -269,9 +267,13 @@ The analysis of patient waiting times revealed critical insights that highlight 
 6. **Day-wise Trends**:  
    The day-of-week analysis showed distinct patterns in waiting times, which can be leveraged to optimize scheduling and staffing. For example, increasing staff or resources on Mondays may help reduce peak-time delays.  
 
+---
+
 ## Visualizations
 
 This project features a range of insightful visualizations created in Power BI to uncover trends and patterns in patient waiting times. Highlights include a bar chart showing total revenue by financial class, a column chart for average waiting times by day of the week, and KPIs displaying total patients and revenue. These visuals provide a clear, data-driven perspective to support decision-making. For a detailed view, check out the [Power BI Visualization](https://drive.google.com/file/d/1TwIsagBo-a6vUQv9xQAHy69uzewpoA3-/view?usp=sharing) and [PowerPoint Slides](https://drive.google.com/file/d/1xEaGZa2TTb6-bQsYSSAmRtSaAfM8ZbXd/view?usp=sharing).
+
+---
 
 ### Conclusion
 These findings underline the need for targeted interventions, such as enhanced scheduling practices, balanced resource allocation, and patient-centered workflows, to improve service delivery and patient satisfaction.
