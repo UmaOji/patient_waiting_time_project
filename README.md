@@ -15,13 +15,8 @@ The **Patient Waiting Time** project aims to analyze patient waiting times at a 
    - [Documentation for Patient Wait Time Trends Over Time](#7-documentation-for-patient-wait-time-trends-over-time)
    - [Revenue Vs. Wait Time](#8-revenue-vs-wait-time)
 - [Anomalies and Inconsistencies](#anomalies-and-inconsistencies)
-4. **Methodology**
-   - SQL Queries for Data Analysis
-   - Techniques Used for Cleaning and Analyzing Data
-
-5. **Results**
-   - Summary of Key Findings
-   - Visualizations & Insights (if applicable)
+- Summary of Key Findings
+- Visualizations & Insights (if applicable)
 
 6. **Conclusion**
    - Recommendations Based on Findings
@@ -256,3 +251,30 @@ Throughout the analysis of the **Hospital Patient Data** dataset, several anomal
 By addressing these anomalies, the dataset's quality will be improved, leading to more accurate insights and better decision-making.
 
 ---
+
+### Summary of Key Findings 
+
+The analysis of patient waiting times revealed critical insights that highlight areas for improvement and opportunities to enhance operational efficiency in the hospital. Below is a summary of the key findings:  
+
+1. **Average Waiting Time**:  
+   The average patient waiting time was calculated to be approximately 42.43 minutes, indicating potential inefficiencies in patient flow and resource allocation.  
+
+2. **Longest and Shortest Waiting Times**:  
+   - The **longest waiting times** were observed on specific days, particularly **Mondays**, suggesting that these days experience higher patient volumes or staffing challenges.  
+   - **Sundays**, on the other hand, recorded the **shortest waiting times**, likely due to reduced patient visits or streamlined processes.  
+
+3. **Impact of Financial Class on Waiting Time**:  
+   Patients categorized under different **financial classes** exhibited varying waiting times. This suggests that financial status may influence service prioritization or resource allocation strategies.  
+
+4. **Doctor Types and Consultation Efficiency**:  
+   - Analysis of **doctor types** revealed significant differences in the duration of consultations and their impact on overall waiting times.  
+   - Certain specialities, such as **specialist doctors**, tended to have longer consultation times compared to general practitioners, impacting the flow of patients.  
+
+5. **Revenue Insights**:  
+   - The **total revenue** from medications and consultations was categorized by financial class, providing a clear understanding of income sources and areas that might require strategic focus for improved profitability.  
+
+6. **Day-wise Trends**:  
+   The day-of-week analysis showed distinct patterns in waiting times, which can be leveraged to optimize scheduling and staffing. For example, increasing staff or resources on Mondays may help reduce peak-time delays.  
+
+### Conclusion
+These findings underline the need for targeted interventions, such as enhanced scheduling practices, balanced resource allocation, and patient-centered workflows, to improve service delivery and patient satisfaction.
