@@ -278,7 +278,7 @@ The analysis of patient waiting times revealed critical insights that highlight 
 
 ## Visualizations
 
-This project features a range of insightful visualizations created in Power BI to uncover trends and patterns in patient waiting times. Highlights include a bar chart showing total revenue by financial class, a column chart for average waiting times by day of the week, and KPIs displaying total patients and revenue. These visuals provide a clear, data-driven perspective to support decision-making. For a detailed view, check out the [Power BI Visualization](https://drive.google.com/drive/folders/1JiMYl2-vStWgOXas5yWVJkLipOmvYl7g?dmr=1&ec=wgc-drive-globalnav-goto) and [PowerPoint Slides](https://drive.google.com/file/d/1xEaGZa2TTb6-bQsYSSAmRtSaAfM8ZbXd/view?usp=sharing).
+This project features a range of insightful visualizations created in Power BI to uncover trends and patterns in patient waiting times. Highlights include a bar chart showing total revenue by financial class, a column chart for average waiting times by day of the week, and KPIs displaying total patients and revenue. These visuals provide a clear, data-driven perspective to support decision-making. For a detailed view, check out the [Power BI Visualization](https://drive.google.com/file/d/1TwIsagBo-a6vUQv9xQAHy69uzewpoA3-/view?usp=sharing) and [PowerPoint Slides](https://drive.google.com/file/d/1xEaGZa2TTb6-bQsYSSAmRtSaAfM8ZbXd/view?usp=sharing).
 
 ### Conclusion
 These findings underline the need for targeted interventions, such as enhanced scheduling practices, balanced resource allocation, and patient-centered workflows, to improve service delivery and patient satisfaction.
