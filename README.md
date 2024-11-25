@@ -276,5 +276,9 @@ The analysis of patient waiting times revealed critical insights that highlight 
 6. **Day-wise Trends**:  
    The day-of-week analysis showed distinct patterns in waiting times, which can be leveraged to optimize scheduling and staffing. For example, increasing staff or resources on Mondays may help reduce peak-time delays.  
 
+### Visualisations
+
+[Power Bi](https://github.com/UmaOji/patient-waiting-time/blob/main/PatientWaitTime_PP.pdf)
+
 ### Conclusion
 These findings underline the need for targeted interventions, such as enhanced scheduling practices, balanced resource allocation, and patient-centered workflows, to improve service delivery and patient satisfaction.
