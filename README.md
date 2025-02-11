@@ -145,7 +145,6 @@ Allocate additional resources on **Monday** and **Tuesday** to handle the higher
 This query examines the correlation between patients' entry times and their corresponding wait times. It helps determine whether patients entering the hospital at specific times experience longer or shorter wait times.
 
 **Interpretation:** 
-**Interpretation**:  
 The following table shows the average wait time for patients based on their entry time:
 
 | Entry Time (Hour) | Average Wait Time (Minutes) |
