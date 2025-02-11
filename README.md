@@ -183,7 +183,7 @@ The average wait times for patients over the period are as follows:
 The data shows some variation in wait times, with **November 10th** having the shortest wait time of **31.162 minutes** and **November 11th** the longest at **51.581 minutes**. Other dates show relatively consistent average wait times, hovering between **38** and **46 minutes**.
 
 **Recommendation:**  
-Investigate what factors contributed to the spikes in wait times on **November 4th** and **November 11th**. These outliers might indicate periods of high patient volume or staffing challenges that could be addressed to improve efficiency.
+Investigate what factors contributed to the spikes in wait times on **November 11th** and **November 13th**. These outliers might indicate periods of high patient volume or staffing challenges that could be addressed to improve efficiency.
 
 #### 8. Revenue Vs. Wait Time
 This code is designed to help analyze patient data by looking at how waiting times relate to patient expenses. It aims to understand whether patients with higher expenses tend to have longer waiting times or if there’s any noticeable difference across expense categories.
